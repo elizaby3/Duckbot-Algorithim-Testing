@@ -5,28 +5,25 @@ using UnityEngine;
 
 public class Re : MonoBehaviour
 {   
-    GameObject Duck1;
-    Rigidbody rb;
-    GameObject Duck2;
-    Vector3 direction;
-    float speed = 0.5f;
-    
+    Rigidbody Duck1;
+    Vector3 direction = Vector3.zero;
+
+    float speed = 0.1f;
+
     // Start is called before the first frame update
     void Start()
     {
-        Duck1 = GetComponent<GameObject>();
-        rb = GetComponent<Rigidbody>();   
+       Duck1 = GetComponent<Rigidbody>();   
     }
 
 //Collision Handling
 
     void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "DuckBot") {
-            Duck2 = other.gameObject;
-            print("Detected");
-        }
+            //direction
+            direction = (other.transform.position - Duck1.transform.position).normalized;
 
-        direction = Duck2.transform.position - Duck1.transform.position;
+        }
     }
 
     // Update is called once per frame
@@ -40,7 +37,7 @@ public class Re : MonoBehaviour
         }
         else
         {
-            rb.velocity = direction * speed;
+            transform.position=Vector3.MoveTowards(transform.position, direction, speed);
         }
     }
 }
