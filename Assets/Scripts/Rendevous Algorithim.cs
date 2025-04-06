@@ -5,15 +5,16 @@ using UnityEngine;
 
 public class Re : MonoBehaviour
 {   
-    Rigidbody Duck1;
+    //Rigidbody Duck1;
     Vector3 direction = Vector3.zero;
 
-    float speed = 0.1f;
+    float speed = 0.01f;
+    float min_dist = 2.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-       Duck1 = GetComponent<Rigidbody>();   
+       //Duck1 = GetComponent<Rigidbody>();   
     }
 
 //Collision Handling
@@ -21,9 +22,16 @@ public class Re : MonoBehaviour
     void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "DuckBot") {
             //direction
-            direction = (other.transform.position - Duck1.transform.position).normalized;
+            direction = (other.transform.position - transform.position).normalized;
 
+            if(Vector3.Distance(other.transform.position, transform.position) < min_dist) {
+                direction = Vector3.zero;
+            }
         }
+    }
+
+    void OnTriggerExit(Collider other) {
+        direction = Vector3.zero;
     }
 
     // Update is called once per frame
@@ -34,6 +42,7 @@ public class Re : MonoBehaviour
             //also need to add code to make sure the duckbots don't crash
 
             //insert code here to make duckbot keep rotating
+            transform.Rotate(Vector3.forward, 1, Space.Self);
         }
         else
         {
