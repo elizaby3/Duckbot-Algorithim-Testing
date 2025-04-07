@@ -24,6 +24,10 @@ public class Re : MonoBehaviour
             //direction
             direction = (other.transform.position - transform.position).normalized;
 
+            if(direction.y < 0) {
+                direction.y = 0;
+            }
+
             if(Vector3.Distance(other.transform.position, transform.position) < min_dist) {
                 direction = Vector3.zero;
             }
