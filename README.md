@@ -9,3 +9,5 @@ Please see github project code in the testing branch for current progress.
 - fixing gravity as the colliders interacting with gravity sometimes cause ducks to fly or ducks to fall through the ground
 - experiment with more or less ducks and see how the simulation is affected
 - make different duckbots with different colors employing different strategies to see if one method is more preferable compared to the other 
+
+[Link to Main Projects Page](https://elizaby3.github.io)
