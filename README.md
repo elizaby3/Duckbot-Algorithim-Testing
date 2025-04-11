@@ -1,4 +1,5 @@
-# Main Purpose
+# Duckbot Algorithim Testing
+## Main Purpose
 The purpose of this unity simulation is to simulate an algorithim of Duck Robots \(Duckbots\) finding each other based solely on what they see within their range of vision. This project is inspired by Coordinated Control of Multi-Robot Systems: A survey by Jorge Cortes and Magnus Egerstedt. 
 
 Currently, the simulation deploys 20 duckbots and an average of 17 Duckbots find each other and group together every simulation. In order to do this, the duckbots rotate until they see a fellow duck enter the line of sight. Afterwards, the ducks go toward each other before stopping at a minimum distance. Then, DuckBots rotate around again to see if there are any other ducks nearby.
