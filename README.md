@@ -1,4 +1,5 @@
-https://github.com/user-attachments/assets/9db3d34b-bc1d-4604-a79a-849ac9432f2a
+[![Watch the Video](https://github.com/user-attachments/assets/7dab7355-2b02-464a-a09e-3cfe8d09a982)
+](https://github.com/user-attachments/assets/9db3d34b-bc1d-4604-a79a-849ac9432f2a)
 
 ## Main Purpose
 The purpose of this unity simulation is to simulate an algorithim of Duck Robots \(Duckbots\) finding each other based solely on what they see within their range of vision. This project is part of my research work under Dean Magnus Egerstedt and is based on Coordinated Control of Multi-Robot Systems: A survey by Jorge Cortes and Magnus Egerstedt. 
