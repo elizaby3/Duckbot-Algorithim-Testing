@@ -1,4 +1,4 @@
-[![Watch the Video](https://github.com/user-attachments/assets/7dab7355-2b02-464a-a09e-3cfe8d09a982)
+[![Watch the Video](https://github.com/elizaby3/Duckbot-Algorithim-Testing/blob/main/Screenshot%202025-04-26%20122153.png?raw=true)
 ](https://github.com/user-attachments/assets/9db3d34b-bc1d-4604-a79a-849ac9432f2a)
 
 ## Main Purpose
